@@ -24,6 +24,6 @@ else:
                     file.writelines(lines)
                 print("Файл обновлён!\n")
             else:
-                print("Первая часть не является числом, пропускаю файл.\n")
+                print("пропуск\n")
 
 print("Готово!")
