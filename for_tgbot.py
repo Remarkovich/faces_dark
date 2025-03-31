@@ -4,8 +4,8 @@ import torch
 from ultralytics import YOLO
 
 # Папки
-IMAGES_FOLDER = "data/images/test"  # Папка с изображениями
-OUTPUT_FOLDER = "output/"  # Куда сохранять обработанные изображения и txt
+IMAGES_FOLDER = "data"  # Папка с изображениями
+OUTPUT_FOLDER = "new_output/"  # Куда сохранять обработанные изображения и txt
 
 # Создаём папку для результатов
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
