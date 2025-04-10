@@ -1,0 +1,10 @@
+train: C:\Users\User\faces_dark\dataset_split\train
+val: C:\Users\User\faces_dark\dataset_split\val
+test: C:\Users\User\faces_dark\dataset_split\test
+
+nc: 3  
+
+names:
+  0: alena
+  1: egor
+  2: igor
