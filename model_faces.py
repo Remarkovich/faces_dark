@@ -6,7 +6,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
 # Загрузка твоей классификационной модели YOLOv11
-model = torch.load('yolov11_classifier.pth')
+model = torch.load('best.pt')
 model.eval()
 
 # Трансформации, такие как использовались при обучении
@@ -32,7 +32,7 @@ async def handle_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
         ret, frame = cap.read()
         if not ret:
             break
-        if frame_count % 30 == 0:
+        if frame_count % 9 == 0:
             input_tensor = transform(frame).unsqueeze(0)
             with torch.no_grad():
                 outputs = model(input_tensor)
