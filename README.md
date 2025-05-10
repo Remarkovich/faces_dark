@@ -47,7 +47,7 @@ git clone https://github.com/Remarkovich/faces_dark.git
 cd /нужная модель
 ```
 
-##🚀 Использование
+## 🚀 Использование
 Запустите Telegram-бота:
 
 ```bash
